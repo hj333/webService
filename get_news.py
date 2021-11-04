@@ -23,7 +23,7 @@ def get_naver_news(display_num, start_num, keywords, client_id, client_secret):
         # B-1. 준비하기 - 설정값 세팅
         url = 'https://openapi.naver.com/v1/search/news.json'
 
-        sort = 'date'  # sim: similarity 유사도, date: 날짜
+        sort = 'sim'  # sim: similarity 유사도, date: 날짜
 
         params = {'display': display_num, 'start': start_num,
                   'query': keyword.encode('utf-8'), 'sort': sort}
