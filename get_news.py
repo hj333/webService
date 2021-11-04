@@ -140,7 +140,7 @@ def save_navernews(keywords):
         # item에 번역문 추가하기
         for item in news_items:
             # 네이버 뉴스인 item만 naver_news_items에 저장
-            if (item['is_valid'] == 'Y') and (len(item['content']) <= 5000):
+            if (item['is_valid'] == 'Y') and (len(item['content']) <= 1000):
                 valid_count += 1
 
                 translated_text = translate(
