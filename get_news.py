@@ -17,7 +17,7 @@ def get_naver_news(display_num, start_num, keywords, client_id, client_secret):
     :rtype list
     """
     news_items = []
-
+    result = []
     for keyword in keywords:
         # B. API Request
         # B-1. 준비하기 - 설정값 세팅
